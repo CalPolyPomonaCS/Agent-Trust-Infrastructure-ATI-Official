@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ati: Agent Trust Infrastructure"
+abstract: "Identity, trust, attestation, policy, and audit for AI agents that call agents in other organizations."
+type: software
+authors:
+  - family-names: Nguyen
+    given-names: Viet K.
+    email: vietknguyen@cpp.edu
+    affiliation: "California State Polytechnic University, Pomona"
+  - family-names: Husain
+    given-names: Mohammad I.
+    email: mihusain@cpp.edu
+    affiliation: "California State Polytechnic University, Pomona"
+repository-code: "https://github.com/CalPolyPomonaCS/Agent-Trust-Infrastructure-ATI-Official"
+license: Apache-2.0
+version: 0.1.0
+keywords:
+  - ai-agents
+  - agent-identity
+  - attestation
+  - a2a
+  - mcp

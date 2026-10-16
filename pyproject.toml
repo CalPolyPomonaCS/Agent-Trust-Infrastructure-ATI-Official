@@ -1,0 +1,46 @@
+[project]
+name = "ati"
+version = "0.1.0"
+description = "Identity, trust, attestation, policy, and audit for AI agents that talk across organizations"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [{name = "Viet K. Nguyen", email = "vietknguyen@cpp.edu"},
+           {name = "Mohammad I. Husain", email = "mihusain@cpp.edu"}]
+keywords = ["ai-agents", "agent-identity", "attestation", "a2a", "mcp", "wimse", "zero-trust"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = ["cryptography>=41", "httpx>=0.27"]
+
+[project.urls]
+Repository = "https://github.com/CalPolyPomonaCS/Agent-Trust-Infrastructure-ATI-Official"
+Issues = "https://github.com/CalPolyPomonaCS/Agent-Trust-Infrastructure-ATI-Official/issues"
+Changelog = "https://github.com/CalPolyPomonaCS/Agent-Trust-Infrastructure-ATI-Official/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+server = ["starlette>=0.37", "uvicorn>=0.29"]
+test = ["pytest>=8", "starlette>=0.37"]
+
+[project.scripts]
+ati = "ati.cli:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

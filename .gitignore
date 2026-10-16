@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+ati-home/
+.env
+build/
+org1/
+org2/
+org1.json
+prompt.txt
+agent.py
