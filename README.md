@@ -1,4 +1,4 @@
-# ati
+# Agent-Trust-Infrastructure (ATI)
 
 Checks for AI agents that call agents in other organizations. Each org runs its
 own certificate authority, keeps a list of partner orgs it trusts, and puts a
